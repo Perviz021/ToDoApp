@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5e6bd4f56d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>My Task List</title>
+  </head>
+  <body>
+    <div class="container p-3">
+      <h1 class="app-title" id="header">to do App</h1>
+      <div class="card">
+        <div class="card-header">New Task</div>
+        <div class="card-body">
+          <form id="addTaskForm">
+            <div class="input-group mt-3">
+              <input
+                id="txtTaskName"
+                name="taskName"
+                type="text"
+                class="form-control"
+                placeholder="Type a new task"
+                aria-describedby="btnAddNewTask"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-primary"
+                  type="submit"
+                  id="btnAddNewTask"
+                >
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-header">
+          Task List
+          <a
+            id="btnDeleteAll"
+            href="#"
+            class="btn btn-outline-danger btn-sm delete-all float-end"
+          >
+            Delete All
+          </a>
+          <a
+            href="#"
+            id="btnDeleteSelected"
+            class="btn btn-outline-danger btn-sm delete-all float-end me-2"
+            >Delete Selected</a
+          >
+        </div>
+        <ul id="task-list" class="list-group"></ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
